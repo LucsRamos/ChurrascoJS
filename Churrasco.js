@@ -3,17 +3,17 @@ function Calcular() {
     const normais = Number (document.getElementById('normais').value);
     const criança = Number (document.getElementById('criança').value);
 
-    const meatQuantity = (bebados + normais) * 400 + criança * 200;
-    const sideDishQuantity = (bebados + normais + criança) * 200;
-    const beerQuantity = bebados * 2;
-    const sodaQuantity = (bebados + normais + criança) * 500;
-    const waterQuantity = (bebados + normais + criança) * 400;
+    const QuantidadeCarne = (bebados + normais) * 0.400 + criança * 0.200;
+    const QuantidadeAcompanhamentos = (bebados + normais + criança) * 0.200;
+    const QuantidadeCerveja = bebados * 2;
+    const QuantidadeRefrigerante = (bebados + normais + criança) * 0.500;
+    const QuantidadeAgua = (bebados + normais + criança) * 0.400;
 
-    alert(`Para seu churrasco, voçe vai precisar de:\n
-    ${meatQuantity}g de carne
-    ${sideDishQuantity}g de acompanhamentos
-    ${beerQuantity}1 de cerveja
-    ${sodaQuantity}ml de refrigerente
-    ${waterQuantity}ml de aguá
+    alert(`Quantidade nescessária:\n
+    ${QuantidadeCarne}Kg de carne
+    ${QuantidadeAcompanhamentos}Kg de acompanhamentos
+    ${QuantidadeCerveja}L de cerveja
+    ${QuantidadeRefrigerante}L de refrigerente
+    ${QuantidadeAgua}L de aguá
     `);
 }
